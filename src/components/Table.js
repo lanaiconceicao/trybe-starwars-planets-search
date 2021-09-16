@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useContext } from 'react';
+import MyContext from '../context/MyContext';
 
 // ============================================
 
@@ -25,9 +26,7 @@ import React, { useState, useEffect } from 'react';
 // ============================================
 
 function Table() {
-  // Retorna um valor e uma função para atualizar o valor.
-  // const [state, setState] = useState(initialState);
-  const [data, setData] = useState([]);
+  const { data, setData } = useContext(MyContext);
 
   // Similar ao componentDidMount: useEffect
   useEffect(() => {
@@ -48,7 +47,6 @@ function Table() {
   return (
     <div>
       <table>
-        tabela da lanai
         <thead>
           <tr>
             <th>Name</th>
