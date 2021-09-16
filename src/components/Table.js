@@ -48,6 +48,7 @@ function Table() {
   return (
     <div>
       <table>
+        tabela da lanai
         <thead>
           <tr>
             <th>Name</th>
