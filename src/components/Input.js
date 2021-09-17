@@ -1,10 +1,23 @@
-// import React from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 
-// function Input() {
-//   return (
-//     <div>
-//     </div>
-//   );
-// }
+function Input(props) {
+  const { onChange } = props;
+  return (
+    <label htmlFor="name">
+      <input
+        type="text"
+        name="name"
+        id="name"
+        data-testid="name-filter"
+        onChange={ onChange }
+      />
+    </label>
+  );
+}
 
-// export default Input;
+Input.propTypes = {
+  onChange: PropTypes.func.isRequired,
+};
+
+export default Input;
