@@ -1,6 +1,7 @@
 import React, { useEffect, useContext, useState } from 'react';
 import MyContext from '../context/MyContext';
 import Input from './Input';
+import Select from './Select';
 
 function Table() {
   // Estado para requisito 1
@@ -31,6 +32,7 @@ function Table() {
   return (
     <div>
       <Input onChange={ onChangeInput } />
+      <Select />
       <table>
         <thead>
           <tr>

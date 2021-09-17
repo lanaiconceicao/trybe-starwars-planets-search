@@ -4,14 +4,6 @@ import Table from './components/Table';
 import Provider from './context/Provider';
 
 function App() {
-  // const [name, setName] = useState({
-  //   filters: {
-  //     filterByName: {
-  //       name: 'Tatoo',
-  //     },
-  //   },
-  // });
-
   return (
     <div>
       <Provider>
