@@ -29,7 +29,8 @@ function Select() {
 
   // Função que cria as <options> de column
   const columnGenerate = () => {
-    const columnGenerated = filterColumns.map((option, id) => <option key={ id }>{ option }</option>);
+    const columnGenerated = filterColumns
+      .map((option, id) => <option key={ id }>{ option }</option>);
     return columnGenerated;
   };
 
